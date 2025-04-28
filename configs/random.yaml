@@ -1,0 +1,14 @@
+cw22_root_path: C:\\Users\\victus\\output_root_2
+seed_docs_file: seed.txt
+output_dir: crawl_results/seed_500_crawl_10000_random_big
+num_selected_docs_per_iter: 500
+num_workers: 50
+save_state_every: -1
+max_num_docs: 10000
+selection_method: random_score
+order: desc
+wandb: true
+wandb_project: crawler
+wandb_run_name: seed_10k_crawl_20m_random
+rating_methods:
+  - type: random_score

@@ -1,0 +1,78 @@
+Crawling Strategy Comparison Summary
+===================================
+
+Strategy: seed_500_crawl_10000_(1)dclm_fasttext
+--------------------------------------------------
+Number of documents: 10000
+Average document length: 782 characters
+Median document length: 657 characters
+
+Similarity Metrics:
+  ROUGE-L: 0.1343 (mean), 0.1205 (median)
+  BLEU: 0.0349 (mean), 0.0053 (median)
+  Jaccard: 0.1090 (mean), 0.0894 (median)
+  TF-IDF Cosine: 0.1202 (mean), 0.0990 (median)
+
+
+Strategy: seed_500_crawl_10000_dclm_fasttext
+--------------------------------------------------
+Number of documents: 10000
+Average document length: 779 characters
+Median document length: 659 characters
+
+Similarity Metrics:
+  ROUGE-L: 0.1400 (mean), 0.1217 (median)
+  BLEU: 0.0373 (mean), 0.0055 (median)
+  Jaccard: 0.1135 (mean), 0.0902 (median)
+  TF-IDF Cosine: 0.1249 (mean), 0.1008 (median)
+
+
+Strategy: seed_500_crawl_10000_indegree
+--------------------------------------------------
+Number of documents: 10000
+Average document length: 1025 characters
+Median document length: 746 characters
+
+Similarity Metrics:
+  ROUGE-L: 0.0450 (mean), 0.0091 (median)
+  BLEU: 0.0095 (mean), 0.0002 (median)
+  Jaccard: 0.0373 (mean), 0.0060 (median)
+  TF-IDF Cosine: 0.0470 (mean), 0.0000 (median)
+
+
+Strategy: seed_500_crawl_10000_random
+--------------------------------------------------
+Number of documents: 10000
+Average document length: 1040 characters
+Median document length: 714 characters
+
+Similarity Metrics:
+  ROUGE-L: 0.0420 (mean), 0.0070 (median)
+  BLEU: 0.0067 (mean), 0.0000 (median)
+  Jaccard: 0.0330 (mean), 0.0031 (median)
+  TF-IDF Cosine: 0.0449 (mean), 0.0000 (median)
+
+
+Comparative Analysis
+===================
+
+ROUGE-L similarity:
+  Highest: seed_500_crawl_10000_dclm_fasttext (0.1400)
+  Lowest: seed_500_crawl_10000_random (0.0420)
+  Ratio (highest/lowest): 3.33x
+
+BLEU similarity:
+  Highest: seed_500_crawl_10000_dclm_fasttext (0.0373)
+  Lowest: seed_500_crawl_10000_random (0.0067)
+  Ratio (highest/lowest): 5.59x
+
+Jaccard similarity:
+  Highest: seed_500_crawl_10000_dclm_fasttext (0.1135)
+  Lowest: seed_500_crawl_10000_random (0.0330)
+  Ratio (highest/lowest): 3.44x
+
+TF-IDF Cosine similarity:
+  Highest: seed_500_crawl_10000_dclm_fasttext (0.1249)
+  Lowest: seed_500_crawl_10000_random (0.0449)
+  Ratio (highest/lowest): 2.78x
+

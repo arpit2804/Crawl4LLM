@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs and results
+wandb/
+text_results/
+
+# Environment and configs
+pyvenv.cfg
+
+# Temporary or generated files
+commands.txt
+seed.txt
+Include/
+Lib/
+Scripts/
+fasttext_scorers/
+share/
